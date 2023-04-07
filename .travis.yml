@@ -18,7 +18,7 @@ before_script:
 script:
   - mvn test
 #  - docker-compose run serveur
-# on lance 3 clients, dont 2 qui ne pourront se connecter...
+# on lance 3 clients, dont 2 qui ne pourront se connecter... petite modification de Leo
   - docker-compose up --scale client=3
 #  - docker-compose logs
 #  on efface tous les containers éteints puis les images)
